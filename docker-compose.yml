@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: catraca_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 190621
+      POSTGRES_DB: catraca_db
+    ports:
+      - "5432:5432"
